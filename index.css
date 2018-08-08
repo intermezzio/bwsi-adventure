@@ -1,0 +1,36 @@
+* {
+	border: 1px dashed black;
+}
+
+#container {
+	display: grid;
+	height: 90vh;
+	grid-template-columns: 200px auto 200px;
+	grid-template-rows: 100px auto 100px;
+	grid-template-areas:
+		"map header inventory"
+		"map game inventory"
+		". game inventory";
+}
+#container * {
+	place-self: stretch;
+}
+
+#title {
+	grid-area: header;
+	background-color: blue;
+	text-align: center;
+	font: 24px "Libre Franklin", sans-serif;
+}
+#map {
+	grid-area: map;
+	background-color: green;
+}
+#inventory {
+	grid-area: inventory;
+	background-color: yellow;
+}
+#game {
+	grid-area: game;
+	background-color: red;
+}
