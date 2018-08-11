@@ -9,6 +9,7 @@
 	width: 150px;
 	padding: 5px;
 	-moz-transition: background-color 0.25s;
+	transition: background-color 0.25s;
 }
 .button:hover {
 	background-color: #dddddd;
