@@ -1,36 +1,50 @@
-* {
-	border: 1px dashed black;
+* { /* this is not really css for the game */
+	border: 1px dashed black; /* i do this just to test the css */
+}
+
+.button {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: transparent;
+	width: 200px;
+	padding: 7px;
+	font: 18px "Libre Franklin";
+	-moz-webkit-transition: background-color: 0.25s;
+}
+.button:hover {
+	background-color: lightgray;
 }
 
 #container {
 	display: grid;
-	height: 90vh;
-	grid-template-columns: 200px auto 200px;
-	grid-template-rows: 100px auto 100px;
+	width: 100%;
+	height: 95vh; /* there should be a better way for this... */
+	grid-template-columns: 50px 300px auto 300px 50px;
+	grid-template-rows: 50px auto 100px 50px;
 	grid-template-areas:
-		"map header inventory"
-		"map game inventory"
-		". game inventory";
+		". . header . ."
+		". output buttons inventory ."
+		". output buttons inventory ."
+		". output footer footer footer";
+
+	background-color: #ffffff;
 }
-#container * {
+#container div {
 	place-self: stretch;
+	padding: 10px;
 }
 
 #title {
 	grid-area: header;
-	background-color: blue;
 	text-align: center;
 	font: 24px "Libre Franklin", sans-serif;
 }
-#map {
-	grid-area: map;
-	background-color: green;
+#output {
+	grid-area: output;
 }
 #inventory {
 	grid-area: inventory;
-	background-color: yellow;
 }
-#game {
-	grid-area: game;
-	background-color: red;
+#buttons {
+	grid-area: buttons;
 }

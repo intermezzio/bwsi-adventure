@@ -1,26 +1,35 @@
 <html>
 <head>
-	<title>A BWSI Adventure</title>
+	<title>Title Here</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
 </head>
 <body>
 <div id="container">
   <div id="title">
-    The BWSI Game
+    A Game Title
   </div>
-  <div id="map">
-      
+  <div id="output">
+      output here
   </div>
   <div id="inventory">
-
+      inventory here
   </div>
-  <canvas id="game"></canvas>
+  <div id="buttons">
+      buttons here
+      <br>
+      <button class="button">Sample Button</button>
+      <button class="button">Sample Button</button>
+  </div>
 </div>
 <script src="game.js"></script>
 <script type="text/javascript">
-var scrn = document.getElementById("game"); // the game
-var game = new Game(scrn);
+var buttonsEl = document.getElementById("buttons"); // the game
+var outputEl = document.getElementById("output");
+var inventoryEl = document.getElementById("inventory");
+var game = new Game(outputEl, buttonsEl, inventoryEl);
+console.log("made a game object");
+console.log(game);
 
 </script>
 </body>
