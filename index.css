@@ -1,18 +1,17 @@
-* { /* this is not really css for the game */
-	border: 1px dashed black; /* i do this just to test the css */
+* { /* i do this just to test the css */
+	border: 1px dashed black;
 }
 
 .button {
 	border: 2px solid black;
 	border-radius: 10px;
 	background-color: transparent;
-	width: 200px;
-	padding: 7px;
-	font: 18px "Libre Franklin";
-	-moz-webkit-transition: background-color: 0.25s;
+	width: 150px;
+	padding: 5px;
+	-moz-transition: background-color 0.25s;
 }
 .button:hover {
-	background-color: lightgray;
+	background-color: #dddddd;
 }
 
 #container {
@@ -25,9 +24,10 @@
 		". . header . ."
 		". output buttons inventory ."
 		". output buttons inventory ."
-		". output footer footer footer";
+		". output footer footer .";
 
 	background-color: #ffffff;
+	font: 14px "Libre Franklin", sans-serif;
 }
 #container div {
 	place-self: stretch;
@@ -47,4 +47,7 @@
 }
 #buttons {
 	grid-area: buttons;
+}
+#footer {
+	grid-area: footer;
 }
