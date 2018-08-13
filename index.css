@@ -2,17 +2,45 @@
 	border: 1px dashed black;
 }
 
+:root {
+	--green: #2ecc40;
+	--lightgreen: #e3fcc7;
+	--red: #ef4136;
+	--lightred: #fcd1b6;
+	--yellow: #ffcc33;
+	--lightyellow: #ffffcc;
+	/* variable names for colors here */
+}
+
 .button {
 	border: 2px solid black;
+	color: var(--green);
 	border-radius: 10px;
 	background-color: transparent;
 	width: 150px;
 	padding: 5px;
+	margin: 5px;
 	-moz-transition: background-color 0.25s;
 	transition: background-color 0.25s;
 }
-.button:hover {
-	background-color: #dddddd;
+.button.on {
+	border-color: var(--green);
+	color: var(--green);
+}
+.button.on:hover {
+	background-color: var(--lightgreen);
+}
+.button.off {
+	border-color: var(--red) !important;
+	color: var(--red);
+	background-color: var(--lightred);
+}
+.button.loading {
+	border-color: var(--yellow);
+	color: var(--yellow);
+}
+.button.loading:hover {
+	background-color: var(--lightyellow)
 }
 
 #container {
