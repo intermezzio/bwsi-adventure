@@ -9,6 +9,7 @@ class Game {
 		this.buttons = Array();
 		this.inventory = {
 			item: 0,
+			otherItem: 0
 			//items : quantity
 		};
 	};
