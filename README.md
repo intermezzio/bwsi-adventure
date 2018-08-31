@@ -1,2 +1,2 @@
-# bwsi-adventure
+# web-adventure
 A web game
