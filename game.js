@@ -1,3 +1,10 @@
+/* Create structures for the game 
+   and other objects in the game
+
+   Place
+
+ */
+
 var Game = function(output, buttons, inventory) {
 	this.state = 0; // game state, 0 = start
 	this.outputEl = outputEl; // DOM element
@@ -17,6 +24,12 @@ var Output = function(text, options) {
 var Popup = function(text, btns) {
 	this.txt = text; // text
 	this.btns = btns || Array(); // btn list
+	this.open = function(game) {
+		// what to do when the popup appears
+	}
+	this.close = function(game) {
+		// what to do when the popup closes
+	}
 }
 
 var Btn = function(text, onclick, pos) {
