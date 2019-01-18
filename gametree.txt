@@ -1,0 +1,12 @@
+Start:
+
+Underground shelter
+Actions:
+- Look out
+- when coast is clear walk outside
+- pick up items
+
+Outside
+Actions:
+- Move
+- Go back down
