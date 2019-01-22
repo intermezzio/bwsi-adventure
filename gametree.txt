@@ -10,3 +10,7 @@ Outside
 Actions:
 - Move
 - Go back down
+
+Find more shelters?
+Interact with more people?
+Get an object
